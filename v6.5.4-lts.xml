@@ -35,7 +35,7 @@
            remote="qt"
            revision="e9256e6636893c560b4ed3536e4f4a727e7ed02e"
            upstream="mickledore"
-           path="sources/meta-boot2qt">
+           path="sources/meta-boot2qt"/>
 
   <!-- NXP -->
   <remote name="freescale"
