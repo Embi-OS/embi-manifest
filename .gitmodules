@@ -1,0 +1,3 @@
+[submodule "Qt"]
+	path = Qt
+	url = https://code.qt.io/yocto/boot2qt-manifest.git
