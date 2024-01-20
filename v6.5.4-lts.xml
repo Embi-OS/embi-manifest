@@ -86,7 +86,7 @@
   <!-- Embi -->
   <remote name="embi"
           fetch="https://github.com/Romain-Donze"/>
-  <project name="meta-matrix"
+  <project name="meta-embi"
            remote="embi"
            revision="main"
            path="sources/meta-embi">
