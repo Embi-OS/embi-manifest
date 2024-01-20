@@ -11,11 +11,11 @@ chmod a+rx ~/.local/bin/repo
 
 After installing the repo tool, run following commands to initialize the build environment.
 ```bash
-repo init -u git://github.com:Romain-Donze/embi-manifest -m <manifest>
+repo init -u https://github.com:Romain-Donze/embi-manifest -m <manifest>
 repo sync
 
 export MACHINE=raspberrypi4-64 && source ./setup-environment.sh
 ```
 
-For more information about Boot to Qt, see https://doc.qt.io/QtForDeviceCreation/
+For more information about Embi OS, see https://github.com/Romain-Donze/
 
