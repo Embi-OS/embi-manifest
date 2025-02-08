@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
-  <include name="v6.8.1-lts.xml"/>
+  <include name="v6.8.2-lts.xml"/>
 
 </manifest>
