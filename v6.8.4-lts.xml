@@ -15,6 +15,11 @@
            revision="refs/tags/yocto-5.0.10"
            upstream="scarthgap"
            path="sources/meta-mingw"/>
+  <project name="meta-virtualization"
+           remote="yocto"
+           revision="9e040ee8dd6025558ea60ac9db60c41bfeddf221"
+           upstream="scarthgap"
+           path="sources/meta-virtualization" />
 
   <!-- OpenEmbedded -->
   <remote name="oe"
