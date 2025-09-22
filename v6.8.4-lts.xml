@@ -68,7 +68,7 @@
   <!-- Raspberry Pi -->
   <project name="meta-raspberrypi"
            remote="yocto"
-           revision="3afc9728b1f4ba0f5be1af34883d6582966133a1"
+           revision="aaf976a665daa7e520545908adef8a0e9410b57f"
            upstream="scarthgap"
            path="sources/meta-raspberrypi"/>
 
@@ -97,6 +97,15 @@
            upstream="lts-6.8.4"
            path="sources/meta-qt6"/>
 
+  <!-- SWUpdate -->
+  <remote name="swupdate"
+          fetch="https://github.com/sbabic"/>
+  <project name="meta-swupdate"
+           remote="swupdate"
+           revision="43ef322cbf5b91d84b007c343cf73e9b01699594"
+           upstream="scarthgap"
+           path="sources/meta-swupdate"/>
+
   <!-- Embi -->
   <remote name="embi"
           fetch="https://github.com/Embi-OS"/>
@@ -105,7 +114,7 @@
            revision="main"
            path="sources/meta-embi">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
-    <linkfile dest="sources/templates" src="meta-embi/conf/templates/default"/>
+    <linkfile dest="sources/templates" src="meta-embi/meta-embi-swupdate/conf/templates/default"/>
   </project>
   
 </manifest>
