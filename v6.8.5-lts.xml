@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="scarthgap"/>
+
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="refs/tags/yocto-5.0.12"
+           upstream="scarthgap"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="refs/tags/yocto-5.0.12"
+           upstream="scarthgap"
+           path="sources/meta-mingw"/>
+  <project name="meta-virtualization"
+           remote="yocto"
+           revision="af1db2042caf8021d767dce1b26c08b59b96f3d1"
+           upstream="scarthgap"
+           path="sources/meta-virtualization" />
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="c29a18fa39ede952f3f6108ec007c1906e2d9a0d"
+           upstream="scarthgap"
+           path="sources/meta-openembedded"/>
+
+  <!-- Clang -->
+  <remote name="kraj"
+          fetch="https://github.com/kraj"/>
+  <project name="meta-clang"
+           remote="kraj"
+           revision="057ee563305e9484b29d02347aeafdadc5ea28ed"
+           upstream="scarthgap"
+           path="sources/meta-clang"/>
+
+  <!-- Boot to Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="9b3f0777d381748c16b232a375f1baf73ccf3fa3"
+           upstream="scarthgap"
+           path="sources/meta-boot2qt"/>
+
+  <!-- NXP -->
+  <remote name="freescale"
+          fetch="https://github.com/Freescale"/>
+  <project name="meta-freescale"
+           remote="freescale"
+           revision="212f4b3b175f6d58c691192545454cd2d2e908d9"
+           upstream="scarthgap"
+           path="sources/meta-freescale"/>
+  <project name="meta-freescale-3rdparty"
+           remote="freescale"
+           revision="70c83e96c7f75e73245cb77f1b0cada9ed4bbc6d"
+           upstream="scarthgap"
+           path="sources/meta-freescale-3rdparty"/>
+
+  <!-- Raspberry Pi -->
+  <project name="meta-raspberrypi"
+           remote="yocto"
+           revision="aaf976a665daa7e520545908adef8a0e9410b57f"
+           upstream="scarthgap"
+           path="sources/meta-raspberrypi"/>
+
+  <!-- Intel -->
+  <remote name="intel"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="meta-intel"
+           remote="intel"
+           revision="b065676a83371b34559f2077d9b2f6a6ac5652f7"
+           upstream="scarthgap"
+           path="sources/meta-intel"/>
+
+  <!-- NVIDIA -->
+  <remote name="OE4T"
+          fetch="https://github.com/OE4T"/>
+  <project name="meta-tegra"
+           remote="OE4T"
+           revision="aca8ae6dcaedd1651337838514d0797059c41406"
+           upstream="scarthgap"
+           path="sources/meta-tegra"/>
+
+  <!-- Qt -->
+  <project name="meta-qt6"
+           remote="qt"
+           revision="refs/tags/v6.8.5-lts"
+           upstream="lts-6.8.5"
+           path="sources/meta-qt6"/>
+
+  <!-- SWUpdate -->
+  <remote name="swupdate"
+          fetch="https://github.com/sbabic"/>
+  <project name="meta-swupdate"
+           remote="swupdate"
+           revision="43ef322cbf5b91d84b007c343cf73e9b01699594"
+           upstream="scarthgap"
+           path="sources/meta-swupdate"/>
+
+  <!-- Embi -->
+  <remote name="embi"
+          fetch="https://github.com/Embi-OS"/>
+  <project name="meta-embi"
+           remote="embi"
+           revision="main"
+           path="sources/meta-embi">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+    <linkfile dest="sources/templates" src="conf/templates/default"/>
+  </project>
+  
+</manifest>
