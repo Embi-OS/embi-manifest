@@ -97,6 +97,15 @@
            upstream="lts-6.8.5"
            path="sources/meta-qt6"/>
 
+  <!-- U-Boot -->
+  <remote name="lts-mixins"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="meta-lts-mixins"
+           remote="lts-mixins"
+           revision="a44882db02a0ed0f149371831bfbe067665eb42b"
+           upstream="scarthgap/u-boot"
+           path="sources/meta-lts-mixins"/>
+
   <!-- SWUpdate -->
   <remote name="swupdate"
           fetch="https://github.com/sbabic"/>
