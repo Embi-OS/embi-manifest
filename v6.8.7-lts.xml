@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="scarthgap"/>
+
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="refs/tags/yocto-5.0.15"
+           upstream="scarthgap"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="refs/tags/yocto-5.0.15"
+           upstream="scarthgap"
+           path="sources/meta-mingw"/>
+  <project name="meta-virtualization"
+           remote="yocto"
+           revision="f92518e20530edfebca45e4170e11460949a5303"
+           upstream="scarthgap"
+           path="sources/meta-virtualization"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="2b26d30fc7f478f5735d514f0c1bc28f6a4148b6"
+           upstream="scarthgap"
+           path="sources/meta-openembedded"/>
+
+  <!-- Clang -->
+  <remote name="kraj"
+          fetch="https://github.com/kraj"/>
+  <project name="meta-clang"
+           remote="kraj"
+           revision="5c602337ea1a80fb7217eeda04e396cf90587dca"
+           upstream="scarthgap"
+           path="sources/meta-clang"/>
+
+  <!-- Boot to Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="44ebc67c9d7940c1e91e4b090383a72aa8fa890e"
+           upstream="scarthgap"
+           path="sources/meta-boot2qt"/>
+
+  <!-- NXP -->
+  <remote name="freescale"
+          fetch="https://github.com/Freescale"/>
+  <project name="meta-freescale"
+           remote="freescale"
+           revision="902dde8c5bd29bb507ac8d37772565a6c9ab77cd"
+           upstream="scarthgap"
+           path="sources/meta-freescale"/>
+  <project name="meta-freescale-3rdparty"
+           remote="freescale"
+           revision="70c83e96c7f75e73245cb77f1b0cada9ed4bbc6d"
+           upstream="scarthgap"
+           path="sources/meta-freescale-3rdparty"/>
+
+  <!-- Raspberry Pi -->
+  <project name="meta-raspberrypi"
+           remote="yocto"
+           revision="2c646d29912dcc873469a57b1c207e1549c5094d"
+           upstream="scarthgap"
+           path="sources/meta-raspberrypi"/>
+
+  <!-- Intel -->
+  <remote name="intel"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="meta-intel"
+           remote="intel"
+           revision="6fc37057c7f0293a2345e303588901889df8b937"
+           upstream="scarthgap"
+           path="sources/meta-intel"/>
+
+  <!-- NVIDIA -->
+  <remote name="OE4T"
+          fetch="https://github.com/OE4T"/>
+  <project name="meta-tegra"
+           remote="OE4T"
+           revision="447c21467f65be2389f68a189b6871f13729d222"
+           upstream="scarthgap"
+           path="sources/meta-tegra"/>
+
+  <!-- Qt -->
+  <project name="meta-qt6"
+           remote="qt"
+           revision="refs/tags/v6.8.7-lts"
+           upstream="lts-6.8.7"
+           path="sources/meta-qt6"/>
+
+  <!-- U-Boot -->
+  <remote name="lts-mixins"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="meta-lts-mixins"
+           remote="lts-mixins"
+           revision="a44882db02a0ed0f149371831bfbe067665eb42b"
+           upstream="scarthgap/u-boot"
+           path="sources/meta-lts-mixins"/>
+
+  <!-- SWUpdate -->
+  <remote name="swupdate"
+          fetch="https://github.com/sbabic"/>
+  <project name="meta-swupdate"
+           remote="swupdate"
+           revision="81f4faa406e70dfa514e2f7642f97df33d3b84ae"
+           upstream="scarthgap"
+           path="sources/meta-swupdate"/>
+
+  <!-- Embi -->
+  <remote name="embi"
+          fetch="https://github.com/Embi-OS"/>
+  <project name="meta-embi"
+           remote="embi"
+           revision="main"
+           path="sources/meta-embi">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+    <linkfile dest="sources/templates" src="conf/templates/default"/>
+  </project>
+  
+</manifest>
